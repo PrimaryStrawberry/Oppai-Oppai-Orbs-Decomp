@@ -1,6 +1,6 @@
 # Oppai Oppai Orbs Decompilation
 
-[Download the ](https://inksgirls.itch.io/orbs)(NSFW warning) , **I did not make this.** all credit goes to [@inksgirls](https://inksgirls.itch.io/) on itch.io.
+This is a Decompilation and Enhancement of Oppai Oppai Orbs! You can find the game [Here](https://inksgirls.itch.io/orbs)(NSFW warning) , **I did not make this.** all credit goes to [@inksgirls](https://inksgirls.itch.io/) on itch.io.
 
 ### Compiling from Source
 
@@ -12,7 +12,7 @@ along with android sdk, and opensdk for android compilation.
 the apk will give you permission warnings, its safe to ignore it. (or just build it from the source)
 
 > [!IMPORTANT]
-> If you have a cool feature idea please share it, I can do just about anything except adding more art!
+> If you have a cool feature idea please share it, I can do just about anything **except adding more art!**
 
 ## Enhanced Version Features:
 
