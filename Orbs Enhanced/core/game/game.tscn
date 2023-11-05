@@ -7,11 +7,11 @@
 [ext_resource type="FontFile" uid="uid://c24frujlhbnu4" path="res://assets/misc/04B_11__.TTF" id="5"]
 [ext_resource type="Texture2D" uid="uid://djdl2k4rata0u" path="res://assets/graphics/ui/gauge.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://dl2s8ed5vrqrg" path="res://assets/graphics/ui/arrow.png" id="7"]
-[ext_resource type="PackedScene" path="res://core/game/spawner.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://bgf5uqahg5v7q" path="res://core/game/spawner.tscn" id="8"]
 [ext_resource type="Texture2D" uid="uid://biy7vboppfpoe" path="res://assets/graphics/background/glass.png" id="9"]
 [ext_resource type="Texture2D" uid="uid://nlh63lx4cyoi" path="res://assets/graphics/background/cabinet.png" id="10"]
 [ext_resource type="AudioStream" uid="uid://bh4mixguq8nlj" path="res://assets/audio/connect.wav" id="11"]
-[ext_resource type="AudioStream" uid="uid://cnh3nmpkxrvo6" path="res://assets/audio/orbs.ogg" id="12"]
+[ext_resource type="AudioStream" uid="uid://d840jex3ku18" path="res://assets/audio/bust-up.wav" id="12"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(860, 100)
@@ -222,13 +222,11 @@ metadata/_edit_lock_ = true
 [node name="ConnectSfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11")
 volume_db = -2.0
-bus = &"Sound"
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 stream = ExtResource("12")
 autoplay = true
-bus = &"Music"
 
 [connection signal="pressed" from="CanvasLayer/Hud/VBoxContainer/IncreaseBust" to="." method="_on_increase_bust_pressed"]
 [connection signal="pressed" from="CanvasLayer/Hud/VBoxContainer/ResetBust" to="." method="_on_reset_bust_pressed"]

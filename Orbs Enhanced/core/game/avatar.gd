@@ -32,7 +32,7 @@ var bar_number:int = 0
 @onready var bust_sfx = $BustSfx
 
 func _ready():
-	current_bust = FRUIT_TYPE.NINTH
+	current_bust = FRUIT_TYPE.FOURTH
 	bar_number = 163
 
 func update_bust(bust):

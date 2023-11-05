@@ -1,1 +1,7 @@
+res://core/main.tscn
 res://core/game/game.tscn
+res://core/game/game.gd
+res://core/game/avatar.tscn
+res://core/game/avatar.gd
+res://core/game/fruits/first.tscn
+res://core/game/fruits/second.tscn

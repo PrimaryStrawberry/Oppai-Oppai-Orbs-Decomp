@@ -1,24 +1,20 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=7 format=3 uid="uid://bl6ii52stgdy3"]
 
 [ext_resource type="Texture2D" uid="uid://cqgt2rwqvhtge" path="res://assets/graphics/ui/up.png" id="1"]
-
-[sub_resource type="Curve" id="1"]
-_data = [Vector2(0, 0), 0.0, 2.64091, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
-point_count = 2
-script = null
-
-[sub_resource type="CurveTexture" id="2"]
-curve = SubResource( "1" )
-script = null
 
 [sub_resource type="Gradient" id="3"]
 offsets = PackedFloat32Array(0, 0.681481, 1)
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
-script = null
 
 [sub_resource type="GradientTexture1D" id="4"]
-gradient = SubResource( "3" )
-script = null
+gradient = SubResource("3")
+
+[sub_resource type="Curve" id="1"]
+_data = [Vector2(0, 0), 0.0, 2.64091, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="2"]
+curve = SubResource("1")
 
 [sub_resource type="ParticleProcessMaterial" id="5"]
 emission_shape = 3
@@ -30,15 +26,13 @@ initial_velocity_min = 5.0
 initial_velocity_max = 10.0
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
-orbit_velocity_curve = null
-scale_curve = SubResource( "2" )
-color_ramp = SubResource( "4" )
-script = null
+scale_curve = SubResource("2")
+color_ramp = SubResource("4")
 
 [node name="BustUpPart" type="GPUParticles2D"]
 process_mode = 3
 emitting = false
-process_material = SubResource( "5" )
-texture = ExtResource( "1" )
+process_material = SubResource("5")
+texture = ExtResource("1")
 lifetime = 1.6
 one_shot = true

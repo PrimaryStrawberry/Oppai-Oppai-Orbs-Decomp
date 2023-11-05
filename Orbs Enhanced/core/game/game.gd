@@ -186,6 +186,7 @@ func update_bust():
 		current_bust += 1
 		bust_amount = 0
 		bust_leveling = true
+		
 	if Util.interp_mode:
 		bust_interp_max_scale = 1.00
 		match current_bust:

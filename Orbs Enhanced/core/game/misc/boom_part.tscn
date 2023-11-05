@@ -1,6 +1,5 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=6 format=3 uid="uid://mdydc5hmracq"]
 
-[ext_resource type="Texture2D" uid="uid://byjq0hw1m016r" path="res://assets/graphics/ui/poof.png" id="1"]
 [ext_resource type="Script" path="res://core/game/misc/particles.gd" id="2"]
 
 [sub_resource type="CanvasItemMaterial" id="1"]
@@ -8,15 +7,12 @@ particles_animation = true
 particles_anim_h_frames = 4
 particles_anim_v_frames = 1
 particles_anim_loop = false
-script = null
 
 [sub_resource type="Gradient" id="2"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
-script = null
 
 [sub_resource type="GradientTexture1D" id="3"]
-gradient = SubResource( "2" )
-script = null
+gradient = SubResource("2")
 
 [sub_resource type="ParticleProcessMaterial" id="4"]
 emission_shape = 1
@@ -29,24 +25,21 @@ initial_velocity_min = 50.0
 initial_velocity_max = 70.0
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
-orbit_velocity_curve = null
 damping_min = 20.0
 damping_max = 40.0
 angle_max = 360.0
-color_ramp = SubResource( "3" )
+color_ramp = SubResource("3")
 anim_offset_min = 1.0
 anim_offset_max = 1.0
-script = null
 
 [node name="BoomPart" type="GPUParticles2D"]
 process_mode = 3
 z_index = 5
-material = SubResource( "1" )
+material = SubResource("1")
 emitting = false
 amount = 2
-process_material = SubResource( "4" )
-texture = ExtResource( "1" )
+process_material = SubResource("4")
 lifetime = 1.2
 one_shot = true
 explosiveness = 1.0
-script = ExtResource( "2" )
+script = ExtResource("2")

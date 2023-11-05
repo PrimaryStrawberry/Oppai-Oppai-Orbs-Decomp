@@ -1,17 +1,16 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://b425lqmptboxp"]
 
-[ext_resource type="PackedScene" uid="uid://wgoi5qjnwjcw" path="res://core/game/fruit.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://core/game/fruit.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://csnxrf5gkrd1s" path="res://assets/graphics/slimes/05-76.png" id="2"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 38.0
-script = null
 
-[node name="Fifth" instance=ExtResource( "1" )]
+[node name="Fifth" instance=ExtResource("1")]
 fruit_type = 4
 
 [node name="Sprite2D" parent="." index="0"]
-texture = ExtResource( "2" )
+texture = ExtResource("2")
 
 [node name="CollisionShape2D" parent="." index="1"]
-shape = SubResource( "1" )
+shape = SubResource("1")

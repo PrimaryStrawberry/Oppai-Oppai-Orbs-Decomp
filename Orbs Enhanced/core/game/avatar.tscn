@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://core/game/avatar.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://c6rigeci7epk6" path="res://assets/graphics/girl/controls.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://bo2fnc5kbctdy" path="res://assets/graphics/girl/girl-04.png" id="3"]
-[ext_resource type="PackedScene" path="res://core/game/misc/bust_up_part.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bl6ii52stgdy3" path="res://core/game/misc/bust_up_part.tscn" id="4"]
 [ext_resource type="Texture2D" uid="uid://2nlllhnfsgvs" path="res://assets/graphics/girl/boobs-00.png" id="4_fteu1"]
 [ext_resource type="AudioStream" uid="uid://d840jex3ku18" path="res://assets/audio/bust-up.wav" id="5"]
 
@@ -27,4 +27,3 @@ position = Vector2(0, 200)
 
 [node name="BustSfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5")
-bus = &"Sound"

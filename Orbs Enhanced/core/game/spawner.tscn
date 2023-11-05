@@ -1,12 +1,12 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://bgf5uqahg5v7q"]
 
 [ext_resource type="Texture2D" uid="uid://5otsartle6ns" path="res://assets/graphics/background/claw.png" id="1"]
 [ext_resource type="Script" path="res://core/game/spawner.gd" id="2"]
 
 [node name="Spawner" type="Sprite2D"]
-texture = ExtResource( "1" )
+texture = ExtResource("1")
 offset = Vector2(0, 340)
-script = ExtResource( "2" )
+script = ExtResource("2")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(0, 40)

@@ -1,19 +1,24 @@
 [remap]
 
-importer="oggvorbisstr"
-type="AudioStreamOggVorbis"
-uid="uid://cnh3nmpkxrvo6"
-path="res://.godot/imported/orbs.ogg-65cad2492f5fe80dff814753a77a66fa.oggvorbisstr"
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqguip664lcjt"
+path="res://.godot/imported/orbs.ogg-65cad2492f5fe80dff814753a77a66fa.sample"
 
 [deps]
 
 source_file="res://assets/audio/orbs.ogg"
-dest_files=["res://.godot/imported/orbs.ogg-65cad2492f5fe80dff814753a77a66fa.oggvorbisstr"]
+dest_files=["res://.godot/imported/orbs.ogg-65cad2492f5fe80dff814753a77a66fa.sample"]
 
 [params]
 
-loop=true
-loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
